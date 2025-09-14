@@ -1,0 +1,37 @@
+# Vision AI Showcase - Default Configuration
+
+# Directory settings
+models_dir: "models"        # Directory containing model files
+data_dir: "data"           # Directory containing datasets  
+output_dir: "outputs"      # Directory for output files
+
+# Logging configuration
+logging:
+  level: "INFO"            # Log level: DEBUG, INFO, WARNING, ERROR
+  file: "logs/vision_ai.log"  # Log file path
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+# Inference settings
+inference:
+  batch_size: 32           # Default batch size for inference
+  device: "auto"           # Device to use: auto, cuda, cpu
+  max_image_size: 1024     # Maximum image size for processing
+
+# Web interface settings
+web:
+  port: 8501              # Port for Streamlit app
+  host: "localhost"       # Host for web server
+  title: "Vision AI Showcase"  # Application title
+
+# Model-specific settings
+models:
+  default_timeout: 30     # Timeout for model loading (seconds)
+  cache_size: 3           # Number of models to keep in memory
+  
+# Data processing settings
+data:
+  supported_formats: [".jpg", ".jpeg", ".png", ".bmp", ".tiff", ".webp"]
+  max_batch_size: 100     # Maximum batch size for data loading
+  preprocessing:
+    resize_method: "lanczos"  # Resize method: lanczos, bilinear, nearest
+    normalize: true       # Whether to normalize images
