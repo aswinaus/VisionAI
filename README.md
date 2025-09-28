@@ -1,6 +1,6 @@
 # Vision AI Showcase
 
-A comprehensive computer vision demonstration platform showcasing various AI models and capabilities for image classification, object detection, and more.
+A comprehensive computer vision demonstration showcasing various AI models and capabilities for image classification, object detection, and more.
 
 ## 🌟 Features
 
